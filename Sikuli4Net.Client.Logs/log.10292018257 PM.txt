@@ -1,0 +1,3 @@
+:::Making Request to Service: http://localhost:8080/sikuli/api/exists POST: {"jPattern":{"imagePath":"C:\\s.png","offset_x":0,"offset_y":0,"similar":0.7},"timeout":15.0,"patternExists":false,"jResult":null}:::
+:::Making Request to Service: http://localhost:8080/sikuli/api/exists POST: {"jPattern":{"imagePath":"C:\\s.png","offset_x":0,"offset_y":0,"similar":0.7},"timeout":15.0,"patternExists":false,"jResult":null}:::
+:::Making Request to Service: http://localhost:8080/sikuli/api/exists POST: {"jPattern":{"imagePath":"C:\\s.png","offset_x":0,"offset_y":0,"similar":0.7},"timeout":15.0,"patternExists":false,"jResult":null}:::

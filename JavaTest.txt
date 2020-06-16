@@ -1,0 +1,57 @@
+package project.testcases;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import ntt.hphc.enterprise.action.BrowserOp;
+import ntt.hphc.enterprise.action.SeleniumOp;
+import ntt.hphc.enterprise.utility.ALMGernal;
+import ntt.hphc.enterprise.utility.AdvanceReporting;
+import ntt.hphc.enterprise.utility.BaseExtentReport;
+import ntt.hphc.enterprise.utility.Excelutility;
+import ntt.hphc.enterprise.utility.Log;
+import ntt.hphc.enterprise.utility.Utils;
+import project.functions.*;
+import project.variables.ProjectConstant;
+
+public class TestClassName extends BaseExtentReport{
+	Map<String, String> dicTestData;
+	@BeforeMethod
+	public void beforeMethod() throws Exception {
+		SeleniumOp.sTestCaseName = Utils.getTestCaseName(this.toString());
+	 	Log.startTestCase(SeleniumOp.sTestCaseName);
+	 	test=extent.startTest(Utils.getTestCaseName(this.toString()));
+	 	AdvanceReporting.setTest(test);
+	 	Map<String, String> AppURLdictionary = Excelutility.ReadExcelRowByIndexValue(ProjectConstant.Applications_URL_File,"SIT",ProjectConstant.Application_Name);	
+	 	dicTestData = new HashMap<String, String>();
+	 	dicTestData.put("URL", AppURLdictionary.get("URL"));
+	 	dicTestData.put("Username", ntt.hphc.enterprise.utility.xmlUtil.getXMLValue(ntt.hphc.enterprise.EnvVariable.EnterpriseConstant.Credential_File, "//Credentials/LANID"));
+	 	dicTestData.put("Password", ntt.hphc.enterprise.utility.xmlUtil.getXMLValue(ntt.hphc.enterprise.EnvVariable.EnterpriseConstant.Credential_File, "//Credentials/LANPASSWORD"));
+	 	Map<String, String> AppDataFileData;
+		TestDataSteps
+	}
+		
+	
+	@Test
+	public void TestCaseNameVariable(){
+		
+		TestCaseSteps
+		
+	}
+	
+	
+	@AfterMethod
+	public void fetchMostRecentTestResult(ITestResult result) throws Exception{
+		ALMGernal amlobj=new ALMGernal();
+		amlobj.PostResultInALM(result);
+	    Log.endTestCase(SeleniumOp.sTestCaseName);
+	}
+		
+		
+		
+	
+}

@@ -1,0 +1,85 @@
+[debug (10/30/18 10:40:54 AM)] Debug: setLogFile: C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib\SikuliX-1.1.0-SetupLog.txt
+[debug (10/30/18 10:40:54 AM)] RunSetup: ... starting with no args given
+[debug (10/30/18 10:40:54 AM)] RunSetup: Setup: 1.1.0 2015-10-06_17:22 in folder:
+C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib
+[debug (10/30/18 10:40:55 AM)] RunSetup: RunningSystem: Windows 6.1
+[debug (10/30/18 10:40:55 AM)] RunSetup: parent of jar/classes: C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib
+[debug (10/30/18 10:40:55 AM)] RunSetup: RunningJava: Java 7 (x86) 1.7.0_97-b02
+[debug (10/30/18 10:40:55 AM)] init user preferences
+[debug (10/30/18 10:41:08 AM)] RunSetup: 
+popAsk: --------------------
+The following file(s) will be downloaded to
+C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib
+--- Native support libraries for Windows (sikulixlibs...)
+--- Package 1 ---
+sikulixsetupIDE-1.1.0-forsetup.jar (IDE/Scripting)
+sikulixsetupAPI-1.1.0-forsetup.jar (Java API)
+ - with Jython
+Only click NO, if you want to terminate setup now!
+Click YES even if you want to use local copies in Downloads!
+--------------------
+[debug (10/30/18 10:41:17 AM)] FileManager: Downloading sikulixlibswin-1.1.0.jar having 10577 KB
+[debug (10/30/18 10:41:23 AM)] FileManager: downloaded 10577 KB to:
+C:\Users\vankired\AppData\Roaming\Sikulix\SikulixDownloads_201510061722\sikulixlibswin-1.1.0.jar
+[debug (10/30/18 10:41:23 AM)] FileManager: download time: 4
+[debug (10/30/18 10:41:26 AM)] RunSetup: Copied from Downloads: sikulixlibswin
+[debug (10/30/18 10:41:26 AM)] FileManager: resetFolder:
+C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib\SetupStuff\sikulixlibs\windows
+jar:file:/C:/SVN/CTS_Internal_Tools/SourceCodeProjects/AutomationFirst/lib/sikulixlibswin.jar
+[debug (10/30/18 10:41:27 AM)] FileManager: Downloading sikulixsetupAPI-1.1.0-forsetup.jar having 2083 KB
+[debug (10/30/18 10:41:30 AM)] FileManager: downloaded 2083 KB to:
+C:\Users\vankired\AppData\Roaming\Sikulix\SikulixDownloads_201510061722\sikulixsetupAPI-1.1.0-forsetup.jar
+[debug (10/30/18 10:41:30 AM)] FileManager: download time: 0
+[debug (10/30/18 10:41:33 AM)] RunSetup: Copied from Downloads: sikulixapi
+[debug (10/30/18 10:41:33 AM)] FileManager: resetFolder:
+C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib\SetupStuff\Lib
+jar:file:/C:/SVN/CTS_Internal_Tools/SourceCodeProjects/AutomationFirst/lib/sikulixapi.jar
+[debug (10/30/18 10:41:34 AM)] FileManager: Downloading sikulixsetupIDE-1.1.0-forsetup.jar having 3858 KB
+[debug (10/30/18 10:41:36 AM)] FileManager: downloaded 3858 KB to:
+C:\Users\vankired\AppData\Roaming\Sikulix\SikulixDownloads_201510061722\sikulixsetupIDE-1.1.0-forsetup.jar
+[debug (10/30/18 10:41:36 AM)] FileManager: download time: 1
+[debug (10/30/18 10:41:39 AM)] RunSetup: Copied from Downloads: sikulix
+[debug (10/30/18 10:41:39 AM)] RunSetup: 
+popAsk: --------------------
+If you click YES, you will get Jython version 2.7.0 (recommended)
+... but there is an issue with some rare UTF-8/Unicode situations,
+that usually appear on startup with UTF-8 ccharacters
+somewhere in the system environment
+If you encounter such problems with Jython 2.7.0
+run setup again and
+click NO to get Jython 2.5.4rc1
+--------------------
+[debug (10/30/18 10:41:43 AM)] FileManager: Downloading jython-standalone-2.7.0.jar with unknown size
+[error (10/30/18 10:41:43 AM)] FileManager: problems while downloading
+javax.net.ssl.SSLException: Received fatal alert: protocol_version
+[debug (10/30/18 10:41:46 AM)] RunSetup: Download ended
+[debug (10/30/18 10:41:46 AM)] RunSetup: Downloads for selected options:
+sikulixlibswin-1.1.0.jar sikulixsetupIDE-1.1.0-forsetup.jar sikulixsetupAPI-1.1.0-forsetup.jar jython-standalone-2.7.0.jar 
+[debug (10/30/18 10:41:46 AM)] RunSetup: 
+popError: --------------------
+Some of the downloads did not complete successfully.
+Check the logfile for possible error causes.
+If you think, setup's inline download is blocked somehow on
+your system, you might download the appropriate raw packages manually
+into the folder Downloads in the setup folder and run setup again.
+download page: https://launchpad.net/raiman/sikulix2013+/1.1.0
+files to download (information is in the setup log file too)
+sikulixlibswin-1.1.0.jar
+sikulixsetupIDE-1.1.0-forsetup.jar
+sikulixsetupAPI-1.1.0-forsetup.jar
+jython-standalone-2.7.0.jar
+Be aware: The raw packages are not useable without being processed by setup!
+For other reasons, you might simply try to run setup again.
+--------------------
+[error (10/30/18 10:41:48 AM)] RunSetup: download not completed successfully
+[error (10/30/18 10:41:48 AM)] RunSetup: ... terminated abnormally :-(
+[debug (10/30/18 10:41:48 AM)] RunSetup: 
+popError: --------------------
+Something serious happened! Sikuli not useable!
+Check the error log at C:\SVN\CTS_Internal_Tools\SourceCodeProjects\AutomationFirst\lib\SikuliX-1.1.0-SetupLog.txt
+--------------------
+[debug (10/30/18 10:41:50 AM)] RunTimeSETUP: final cleanup
+[debug (10/30/18 10:41:52 AM)] FileManager: deleteFileOrFolder:
+C:\Users\vankired\AppData\Local\Temp\sikulilibs
+[debug (10/30/18 10:41:53 AM)] FileManager: deleteFileOrFolder:
+C:\Users\vankired\AppData\Local\Temp\Sikulix_1534100134
